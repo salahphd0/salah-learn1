@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>modal</ion-title>
+    <ion-buttons slot="end">
+    <ion-button fill="clear" color="dark" (click)="dismiss()">
+      <ion-icon slot="icon-only" name="close"></ion-icon>
+    </ion-button>
+
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-text *ngIf="text">
+  {{text}}
+</ion-text>
+<ion-item>
+  <ion-label>enter text here</ion-label>
+  <ion-input [(ngModel)]="inputText"></ion-input>
+</ion-item>
+</ion-content>

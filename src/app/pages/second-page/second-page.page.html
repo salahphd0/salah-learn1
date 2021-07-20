@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>second-page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+<ion-button expand="block" (click)="goBack()">
+  Go To First-Page
+</ion-button>
+<ion-text *ngIf="productId">
+  Product ID is {{productId}}
+</ion-text>
+</ion-content>
